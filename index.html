@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Задание 1 Блочная модель. Прямоугольник content box -->
+    <div class="parent">
+        <div class="child">У любого элемента высота задается по контенту.
+        </div>
+        <div class="child">У блочных элементов потомок занимает 100% ширины родительского элемента.
+        </div>
+        <div class="child">У блочных элементов можно задать размер контентной области - изменить width или height.
+        </div>
+    </div>
+    <span class="parent">
+        <i class="child">У любого элемента высота задается по контенту.
+        </i>
+        <i class="child">У строчных элементов ширина задается по контенту.
+        </i>
+        <i class="child">У строчных элементов нельзя задать размер контентной области - изменить width или height.
+        </i>
+    </span>
+    <!-- Задание 2 Блочная модель: min-width -->
+    <div class="parent">
+        <div class="child">У блочных элементов контент может превышать заданные размеры content-area.
+        </div>
+        <div class="child">Ширина элемента не уменьшится меньше значения min-width, даже если значение width будет меньше.
+        </div>
+    </div>
+    <span class="parent">
+        <i class="child">У любого элемента высота задается по контенту.
+        </i>
+        <i class="child">У строчных элементов ширина задается по контенту.
+        </i>
+        <i class="child">У строчных элементов нельзя задать размер контентной области - изменить width или height.
+        </i>
+    </span>
+    <!-- Задание 3 Блочная модель: max-width -->
+    <div class="parent">
+        <div class="child">Ширина элемента не превысит значения max-width, даже если значение width будет больше.
+        </div>
+    </div>
+    <span class="parent">
+        <i class="child">У любого элемента высота задается по контенту.
+        </i>
+        <i class="child">У строчных элементов ширина задается по контенту.
+        </i>
+        <i class="child">У строчных элементов нельзя задать размер контентной области - изменить width или height.
+        </i>
+    </span>
+    <!-- Задание 4 Блочная модель: min-height -->
+    <div class="parent">
+        <div class="child"></div>
+    </div>
+    <div class="parent">
+        <div class="child">
+            У любого элемента высота задается по контенту. Если контента нет, то высота равна 0. Если контента больше, то
+            значение min-height позволяет высоте увеличиваться.</div>
+    </div>
+    <!-- Задание 5 Блочная модель: height vs min-height -->
+    <div class="card">
+        <h4 clacc="card-title">Canvas</h4>
+        <p class="card-description">
+            В макете psd есть область, называемая canvas. Это область в которой дизайнер может что-то рисовать, а вне этой
+            области программа рисовать не позволит. Ширина canvas - это не конкретная ширина экрана, а максимальная. Т.е.
+            реальный экран может быть и больше или меньше - это не важно. В верстке это все равно ширина body, которую мы не
+            задем. Потому что ширину body задает операционная система и браузер.
+        </p>
+    </div>
+    <div class="card">
+        <h4 clacc="card-title">Content box</h4>
+        <p class="card-description">Для верстки важна максимальная ширина, внутри которой размещен контент. Обычно эту
+            ширину ограничивают направляющие.</p>
+    </div>
+    <!-- Задание 6 Блочная модель: padding и переопределение box-sizing -->
+    <div class="parent">
+        <div class="child">
+        </div>
+    </div>
+    <!-- Задание 7 Блочная модель: проценты -->
+    <div class="parent">
+        <div class="child">
+            <div class="inner">w100+h150</div>
+        </div>
+    </div>
+    <!-- Задание 8 Блочная модель: один из способов избежать выпадения вертикального отступа -->
+    <div class="parent">
+        <div class="child">
+            <div class="inner">w100+h150</div>
+        </div>
+    </div>
+    <!-- Задание 9 Блочная модель: рекомендуемый способ избегать выпадения вертикального отступа и margin-collapse -->
+    <div class="parent">
+        <div class="child">
+        </div>
+    </div>
+    <div class="parent">
+        <div class="child">
+        </div>
+    </div>
+    <!-- Задание 10 Блочная модель: display: inline-block -->
+    <div class="container">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+        <div class="box">5</div>
+        <div class="box">6</div>
+        <div class="box">7</div>
+        <div class="box">8</div>
+        <div class="box">9</div>
+        <div class="box">10</div>
+        <div class="box">11</div>
+        <div class="box">12</div>
+    </div>
+    <!-- Задание 11 Блочная модель: display: inline-block -->
+    <div class="container">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+        <div class="box">5</div>
+        <div class="box">6</div>
+        <div class="box">7</div>
+        <div class="box">8</div>
+        <div class="box">9</div>
+        <div class="box">10</div>
+        <div class="box">11</div>
+        <div class="box">12</div>
+    </div>
+    <!-- Задание 12 Псевдокласс nth-of-type() и nth-last-of-type -->
+    <div class="container">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+        <div class="box">5</div>
+        <div class="box">6</div>
+        <div class="box">7</div>
+        <div class="box">8</div>
+        <div class="box">9</div>
+        <div class="box">10</div>
+        <div class="box">11</div>
+        <div class="box">12</div>
+    </div>
+
+
+
+
+</body>
+</html>
